@@ -24,4 +24,17 @@ export class RestApiService {
   createEmployee(employee): Observable<Employees> {
     return this.http.post<Employees>(this.apiUrl + '/employees', JSON.stringify(employee), this.httpOptions);
   }
+
+  getEmployee(id): Observable<Employees> {
+    return this.http.get<Employees>(this.apiUrl + '/employees/' + id);
+  }
+
+  updateEmployee(id, employee): Observable<Employees> {
+    return this.http.put<Employees>(this.apiUrl + '/employees/' + id,
+    JSON.stringify(employee), this.httpOptions);
+  }
+
+  deleteEmployee(id) {
+    return this.http.delete<Employees>(this.apiUrl + '/employees/' + id);
+  }
 }

@@ -28,8 +28,8 @@
             <td>{{employee.email}}</td>
             <td>{{employee.phone}}</td>
             <td>
-              <span class="edit">Edit</span>
-              <span class="delete" >Delete</span>
+              <span class="edit" routerLink="/employee-edit/{{employee.id}}">Edit</span>
+              <span class="delete" (click)="deleteEmployee(employee.id)">Delete</span>
             </td>
           </tr>
         </tbody>

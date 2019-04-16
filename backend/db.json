@@ -1,16 +1,10 @@
 {
   "employees": [
     {
-      "id": 1,
-      "name": "Spiderman",
-      "email": "peterparker@gmail.com",
-      "phone": "123-456"
-    },
-    {
-      "name": "Tony Stark",
-      "email": "tonystark@gmail.com",
-      "phone": "123-567",
-      "id": 2
+      "name": "Hulk",
+      "email": "hulk@gmail.com",
+      "phone": "123-678",
+      "id": 3
     }
   ]
 }
