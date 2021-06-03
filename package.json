@@ -1,13 +1,16 @@
 {
-  "name": "awesome-todo",
+  "name": "angular-restful",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "server": "json-server --watch backend/db.json",
+    "dev": "concurrently --kill-others \"npm run start\" \"npm run server\""
   },
+  "author": "CodingAndCaffeine",
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.0.2",
@@ -18,6 +21,10 @@
     "@angular/platform-browser": "~12.0.2",
     "@angular/platform-browser-dynamic": "~12.0.2",
     "@angular/router": "~12.0.2",
+    "bootstrap": "^5.0.1",
+    "concurrently": "^6.2.0",
+    "json-server": "^0.16.3",
+    "ng-zorro-antd": "^11.4.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
