@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "name": "Mark Ruffalo",
+      "email": "markruffa@gmail.com",
+      "phone": "+657 9854098611",
+      "id": 1
+    },
+    {
+      "name": "Penguin Dumb",
+      "email": "johndoe@gmail.com",
+      "phone": "+87884848484465",
+      "id": 2
+    },
+    {
+      "name": "Matthew Laing",
+      "email": "matthewl@hotmail.com",
+      "phone": 488697859067,
+      "id": 3
+    }
+  ]
+}
